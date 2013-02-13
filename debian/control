@@ -1,0 +1,12 @@
+Source: ros-groovy-interactive-marker-proxy
+Section: misc
+Priority: extra
+Maintainer: David Gossow <dgossow@willowgarage.com>
+Build-Depends: debhelper (>= 7.0.50~), ros-groovy-message-generation,ros-groovy-interactive-markers,ros-groovy-catkin,ros-groovy-visualization-msgs
+Homepage: https://github.com/dgossow/interactive_marker_proxy
+Standards-Version: 3.9.2
+
+Package: ros-groovy-interactive-marker-proxy
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-groovy-message-runtime,ros-groovy-interactive-markers,ros-groovy-visualization-msgs
+Description: ROS node that acts as a proxy server for Interactive Markers, caring about message demultiplexing and tf transforms.
